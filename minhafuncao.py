@@ -1,9 +1,10 @@
 def formatar_real_replace(valor):
-    texto = f"R${valor:.2f}"
+    texto = f"R${valor:.2f}" # Padrao EUA 1,234.56
     texto = texto.replace(".","X")
     texto = texto.replace(",",",")
     texto = texto.replace("X",".")
     return texto
 
-preco = float(input("Digite o preço: "))
-print(formatar_real_replace(preco))
+# Exemplo de uso
+preco = float(input("Digite o preço: ")) 
+print(formatar_real_replace(preco)) # R$1.234,56
