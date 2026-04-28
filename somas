@@ -1,0 +1,10 @@
+def somar_tudo(numero1, numero2, numero3):
+    resultado = numero1 + numero2 + numero3
+    return resultado
+
+num1 = float(input("Digite o primeiro número: "))
+num2 = float(input("Digite o segundo número: "))                                                
+num3 = float(input("Digite o terceiro número: "))
+
+soma = somar_tudo(num1, num2, num3)
+print(f"A soma dos números é: {soma}")
